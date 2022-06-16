@@ -28,6 +28,19 @@ class StackTest(unittest.TestCase):
         element = self.stack.pop()
         self.assertEqual(element, 10)
 
+    def test_pop_elements_correct_order(self) -> None:
+        self.stack.push(10)
+        self.stack.push(20)
+        self.stack.push(30)
+
+        first_element = self.stack.pop()
+        second_element = self.stack.pop()
+        third_element = self.stack.pop()
+
+        self.assertEqual(first_element, 30)
+        self.assertEqual(second_element, 20)
+        self.assertEqual(third_element, 10)
+
     def test_empty_stack_after_pop_elements(self) -> None:
         self.stack.push(10)
         self.stack.push(20)
