@@ -4,3 +4,11 @@ class StackLimitReachedError(Exception):
 
 class StackEmptyError(Exception):
     pass
+
+
+class QueueLimitReachedError(Exception):
+    pass
+
+
+class QueueEmptyError(Exception):
+    pass
