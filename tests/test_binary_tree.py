@@ -1,10 +1,7 @@
 import unittest
 
 from data_structures.binary_tree import BinaryTree
-from data_structures.exceptions import BinaryTreeEmptyError
 from data_structures.exceptions import BinaryTreeLimitReachedError
-from data_structures.exceptions import ValueNotFoundInBinaryTreeError
-from data_structures.exceptions import BinaryTreeNodeHasNotNullChildren
 
 
 class BinaryTreeTest(unittest.TestCase):
